@@ -1,0 +1,65 @@
+/* navigation position indicator  */
+
+nav #services {
+    padding: 5px;
+    background-color: #2d3436;
+    border: 1px solid white;
+}
+
+nav #home {
+    background-color: #636e72;
+    border: none;
+}
+
+
+/* Google Advertisement area */
+
+.google-ads {
+    height: 150px;
+    width: 86%;
+    margin-left: 100px;
+    align-items: center;
+    background-image: url('/iamge/google-adsense.png');
+    background-size: 180px;
+}
+
+
+/* Service Main area */
+
+.services-main {
+    height: 700px;
+    background-color: white;
+    overflow: hidden;
+    width: 86%;
+    border: 1px solid red;
+    margin: 0 auto;
+    /* margin-left: 100px; */
+}
+
+.services-main h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#text-area {
+    margin-left: 100px;
+}
+
+#services-main {
+    align-items: center;
+    display: flex;
+}
+
+#services-main h3 {
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: ralwey;
+    width: 700px;
+}
+
+#services-main img {
+    height: 300px;
+    width: auto;
+}

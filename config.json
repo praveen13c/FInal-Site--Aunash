@@ -1,0 +1,41 @@
+{
+  "params":
+  {
+    "login_image": "login.png",
+
+    "local_uri": "mysql://root:@localhost/aunash",
+    "prod_uri": "mysql://root:@localhost/aunash",
+
+    "website-name" : "AUNASH",
+    "author": "Praveen Singh Chauhan",
+    "tagline": "Never Ever Give-up",
+    "about-info01": "This Website is multipurpose one.",
+    "about-info02": "Here you can find your various JOB related solutions like Production and Post Production i.e. Photography, Videography, Cinematography, Direction,Creative Editing, Background Score, Poster Design, Motion Poster, Writing, Short FIlm Related Jobs, Casting, Studio Hiring etc.",
+    "about-info03": "Along-with Tech Information, Technology, Video, Network and Motivation Speaker too.",
+    "about-end": "Come... Acquaintance and RELAX.",
+
+    "yt-url": "https://www.youtube.com/TechnologyVideoNetwork",
+    "gh-url": "https://www.github.com/praveen13c",
+    "tw-url": "https://www.twitter.com/praveen13c",
+    "fb-url": "https://www.facebook.com/praveen13c",
+    "ld-url": "https://www.linkedin.com/praveen13c",
+
+    "gmail_user" : "aunash.com@gmail.com",
+    "gmail_password" : "aunash@GMAIL",
+    "upload_location": "C:\\Users\\prave\\PycharmProjects\\aunash7\\static\\upload",
+    "no_of_posts": 2
+
+  },
+  "login" :
+  {
+    "admin_name": "praveen",
+    "admin_pass": "login",
+    "uploadmsg": "Message : File Uploaded Successfully...."
+  },
+
+  "log_msg":
+  {
+    "loggedin" : "You are already Logged in..."
+  }
+
+}

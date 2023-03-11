@@ -1,0 +1,145 @@
+:root {
+    --mrgn-lft: 50px;
+    --fnt-size-para: 18px;
+    --fnt-fam-para: roboto, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --fnt-fam-head: inter, Verdana, Geneva, Tahoma, sans-serif;
+    --line-h-para: 1.2em;
+    --fnt-fam-heading: roboto, Cochin, Geneva, Tahoma, sans-serif;
+}
+
+
+/* navigation position indicator  */
+
+nav #aboutUs {
+    padding: 5px;
+    background-color: #2d3436;
+    border: 1px solid white;
+}
+
+nav #home {
+    background-color: #636e72;
+    border: none;
+}
+
+
+/* Google Advertisement area */
+
+.google-ads {
+    height: 150px;
+    width: 86%;
+    margin-left: 100px;
+    align-items: center;
+    background-image: url('/iamge/google-adsense.png');
+    background-size: 180px;
+}
+
+.abtUs {
+    height: 650px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.aboutUs {
+    display: flex;
+}
+
+#abtus-myImage img {
+    transition: all 1s;
+    box-shadow: 10px 10px 10px grey;
+}
+
+#abtus-myImage h5 {
+    background-color: rgb(233, 161, 79);
+    color: white;
+    font-family: cursive;
+    width: 200px;
+    border-radius: 13px;
+    padding: 2px;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    left: 270px;
+    z-index: 1;
+}
+
+#abtus-myImage:hover h5 {
+    /* position: relative; */
+    visibility: visible;
+}
+
+#abtus-myImage img:hover {
+    transition-timing-function: linear;
+    border-radius: 50%;
+    border: 1px solid red;
+    box-shadow: 10px 10px 10px yellowgreen;
+}
+
+.abtUs #website-heading {
+    padding-bottom: 5px;
+}
+
+.abtUs #myself {
+    font-size: 30px;
+    margin-left: var(--mrgn-lft);
+    padding-bottom: 5px;
+}
+
+.abtUs h1 {
+    font-size: 50px;
+    margin-left: 100px;
+    padding-top: 20px;
+    font-family: var(--fnt-fam-heading);
+    text-shadow: 10px 10px 8px grey;
+}
+
+#text-aboutus h2 {
+    font-family: var(--fnt-fam-head);
+    font-size: 30px;
+    margin-left: var(--mrgn-lft);
+}
+
+#text-aboutus h3 {
+    font-size: var(--fnt-size-para);
+    margin-left: var(--mrgn-lft);
+    padding-bottom: 10px;
+    font-family: var(--fnt-fam-para);
+    font-weight: 300;
+    line-height: var(--line-h-para)
+}
+
+.aboutUs img {
+    height: 300px;
+    width: auto;
+    margin-left: 100px;
+}
+
+#text-aboutus {
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: -50px;
+    margin-right: 90px;
+}
+
+hr {
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+
+/* Local advertisement area */
+
+.local-ads {
+    border: 1px solid black;
+    border-radius: 13px;
+    background-color: #686de0;
+    height: 100px;
+    margin: 0 80px;
+    text-align: center;
+    color: white;
+    /* padding-top: 30px; */
+}
+
+.local-ads h1 {
+    padding-top: 25px;
+}

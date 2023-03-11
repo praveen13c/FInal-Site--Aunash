@@ -1,0 +1,792 @@
+/* Global Selector Starts ----->>*/
+
+
+/* :root {
+    
+    --primary-font: 'Castoro', serif;
+    --heading-font: 'Texturina', serif;
+    --text-font: 'Montserrat', sans-serif;
+    --line-height: 1.5;
+} */
+
+ :root {
+    --primary-color: #0000FF;
+    --red-color: #d63031;
+    --mrgn-lft: 50px;
+    --fnt-size-para: 18px;
+    --fnt-fam-para: roboto, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --fnt-fam-head: inter, Verdana, Geneva, Tahoma, sans-serif;
+    --line-h-para: 1.2em;
+    --fnt-fam-heading: roboto, Cochin, Geneva, Tahoma, sans-serif;
+    --all-boxShadow: 10px 5px 15px rgb(113, 240, 245);
+}
+
+
+/* p {
+  color: var(--primary-color);
+  font-family: var(--body-fonts);
+  line-height: var(--line-height);
+} */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+}
+
+
+/* Global Selector <<------  ENDS*/
+
+
+/* Common Class */
+
+#web-icon {
+    width: 10px;
+    height: auto;
+}
+
+.btn-all {
+    padding: 10px 10px;
+    width: 100px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    background-color: #f39c12;
+    transition: all 0.7s;
+    margin-left: auto;
+}
+
+.btn-all a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-all:hover {
+    transition-timing-function: ease-in-out;
+    background-color: #4834d4;
+    cursor: pointer;
+    box-shadow: 10px 5px 10px grey;
+}
+
+
+/* Body> Header> Nav STARTS */
+
+#header {
+    box-sizing: border-box;
+    height: 60px;
+    background-color: #636e72;
+    /* padding-top: 4px; */
+    position: fixed;
+    width: 100%;
+}
+
+#nav-bar-main {}
+
+nav {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+#brand-icon {
+    height: 40px;
+    width: auto;
+}
+
+.brand-icon {
+    display: inline-block;
+    position: relative;
+}
+
+.brand-icon .ans {
+    background-color: rgb(233, 161, 79);
+    color: white;
+    font-family: cursive;
+    width: 140px;
+    border-radius: 13px;
+    padding: 2px;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    z-index: 1;
+}
+
+.brand-icon:hover .ans {
+    visibility: visible;
+}
+
+.brand-icon:hover {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+nav h3 a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav h3 a:hover {
+    color: tomato;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav li a:hover {
+    color: rgb(245, 208, 153);
+    border-bottom: 1px solid rgb(248, 244, 24);
+    font-weight: 1000;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+nav #home {
+    padding: 5px;
+    background-color: #2d3436;
+    border: 1px solid white;
+}
+
+
+/* Body> Header> Nav ENDS */
+
+
+/* BOdy> Main  STARTS */
+
+.main-area {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto auto;
+    height: 400px;
+    width: 86%;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+#main-img {
+    width: 900px;
+    background-image: url('/iamge/main-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-img h3 {
+    color: white;
+    font-family: var(--fnt-fam-head);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.main-img h1 {
+    color: white;
+    font-family: var(--fnt-fam-heading);
+    font-size: 50px;
+    text-align: center;
+    /* margin-top: 20%; */
+}
+
+aside {
+    height: auto;
+    width: 400px;
+    padding: 10px;
+    background-image: url('/iamge/google-adsense.png');
+    background-size: contain;
+}
+
+
+/* Go To COntact tab */
+
+#goToCU {
+    background-color: #eb4d4b;
+    position: fixed;
+    margin-left: -95px;
+    padding: 15px 15px;
+    box-shadow: 10px 5px 15px grey;
+    writing-mode: vertical-lr;
+    margin-top: 520px;
+}
+
+#goToCU a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0px 20px;
+    transition: all .5s;
+}
+
+#goToCU:hover {
+    box-shadow: var(--all-boxShadow);
+    font-size: 17px;
+    transition-timing-function: linear;
+}
+
+
+/* News section  */
+
+.news-info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid rgb(235, 212, 212);
+    background-color: #2f3640;
+    height: 250px;
+    width: 86%;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    text-align: justify;
+    grid-column-gap: 15px;
+}
+
+#news-info h1 {
+    font-family: var(--fnt-fam-heading);
+    text-align: center;
+    color: white;
+    background-color: #eb4d4b;
+}
+
+#news-info h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+
+
+/* Body> Main  ENDS */
+
+
+/* Body> Quotation  STARTS */
+
+#quotation {
+    height: 50px;
+    width: 86%;
+    margin-left: 100px;
+    background-color: #4834d4;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    box-shadow: 10px -10px 15px grey;
+}
+
+#quotation h2 {
+    font-family: var(--fnt-fam-head);
+    margin-left: 10px;
+}
+
+#quotation h3 {
+    font-size: 20px;
+    font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+#quot-img {
+    height: 40px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+
+/* Body> Quotation  ENDS */
+
+
+/* Body> Services  STARTS */
+
+.service-main {
+    height: 680px;
+    width: 86%;
+    margin: auto auto;
+    border: 1PX SOLID red;
+}
+
+.service-main #service-bar {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: var(--red-color);
+    color: white;
+    align-items: center;
+}
+
+#service-bar h2 {
+    margin-left: 10px;
+    font-family: var(--fnt-fam-heading);
+}
+
+#service-bar h3 {
+    padding-left: 5px;
+    margin-right: 60px;
+    font-family: var(--fnt-fam-para);
+}
+
+
+/* services circles and text  */
+
+.services {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+.services div {
+    height: 200px;
+    width: 200px;
+    border: 1px dashed red;
+    box-shadow: 10px 10px 10px grey;
+    margin-top: 0px;
+    border-radius: 50%;
+    transition: all .7s;
+}
+
+.services div h2 {
+    transition: all .7s;
+    margin-top: 50%;
+    color: white;
+    font-family: var(--fnt-fam-para);
+    border-radius: 12px;
+}
+
+.services div h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.services h3 {
+    transition-timing-function: ease-out;
+    /* margin-top: 50%; */
+    color: rgb(54, 52, 52);
+    font-family: var(--fnt-fam-para);
+    grid-row-gap: 5px;
+    font-weight: 300;
+    ;
+}
+
+.services div:nth-child(odd) {
+    background-color: red;
+}
+
+.services div:nth-child(even) {
+    background-color: blue
+}
+
+.services div:hover {
+    transition-timing-function: ease-in-out;
+    margin-top: -10px;
+    background-color: rgb(236, 215, 24);
+    box-shadow: -10px -5px 15px rgb(113, 240, 245);
+}
+
+.services div:hover h2 {
+    transition-timing-function: ease-in-out;
+    margin-top: 170px;
+    background-color: #f0932b;
+    cursor: pointer;
+}
+
+#editing {
+    background-image: url('/iamge/service-imgs/editing-img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#studio {
+    background-image: url('/iamge/service-imgs/studio-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#web-develop {
+    background-image: url('/iamge/service-imgs/Web-develop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#photography {
+    background-image: url('/iamge/services-bg.jpg');
+    background-position: left;
+    background-size: cover;
+}
+
+#cinematography {
+    background-image: url('/iamge/service-imgs/cinematography-imga.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#director {
+    background-image: url('/iamge/service-imgs/director-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#writer {
+    background-image: url('/iamge/service-imgs/writer-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#voice-over {
+    background-image: url('/iamge/studio-card.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.service-main h5 {
+    margin-left: 78%;
+    font-weight: 200;
+}
+
+
+/* Body> Services  ENDS */
+
+
+/* Body> Blog  STARTS */
+
+.blog {
+    height: 700px;
+    width: 86%;
+    margin: 5px auto;
+    border: 1PX SOLID red;
+}
+
+.blog .blog-bar {
+    display: flex;
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    background-color: var(--red-color);
+    color: white;
+    align-items: center;
+}
+
+.blog-bar h2 {
+    margin-left: 10px;
+    font-family: var(--fnt-fam-heading);
+}
+
+.blog-bar h3 {
+    padding-left: 5px;
+    margin-right: 60px;
+    font-family: var(--fnt-fam-para);
+}
+
+.blog-main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    box-sizing: border-box;
+    grid-row-gap: 10px;
+}
+
+.blog-main div {
+    align-items: center;
+    margin: auto auto;
+    width: 310px;
+    height: 250px;
+    /* border: 1px solid blueviolet; */
+}
+
+.blog-main #blog-text1,
+#blog-text2,
+#blog-text3,
+#blog-text4 {
+    overflow: auto;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.blog-main #blog-box1,
+#blog-box2,
+#blog-box3,
+#blog-box4 {
+    background-image: url(/iamge/service-imgs/writer-image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.blog-main a {
+    transition: all .5s;
+    text-decoration: none;
+    color: white;
+    background-color: #f39c12;
+    font-family: var(--fnt-fam-para);
+    padding: 0px 5px;
+}
+
+.blog-main a:hover {
+    transition-timing-function: ease-out;
+    background-color: #4834d4;
+    font-family: var(--fnt-fam-heading);
+    box-shadow: var(--all-boxShadow);
+    padding: 5px 5px;
+}
+
+.blog #google-ads {
+    height: 100px;
+    background-image: url('/iamge/google-adsense.png');
+    background-size: contain;
+    border: 1px solid gold;
+    background-color: cornflowerblue;
+}
+
+
+/* Body> Blog  ENDS */
+
+
+/* Body> Vlog  STARTS */
+
+.vlog {
+    height: 700px;
+    width: 86%;
+    margin: 0PX auto;
+    margin-top: 10px;
+    border: 1PX SOLID red;
+    /* background-color: rgb(20, 85, 207); */
+}
+
+.vlog .vlog-bar {
+    display: flex;
+    margin-top: 5px;
+    height: 80px;
+    width: 100%;
+    background-color: var(--red-color);
+    color: white;
+    align-items: center;
+}
+
+.vlog-bar h2 {
+    margin-left: 10px;
+    font-family: var(--fnt-fam-heading);
+}
+
+.vlog-bar h3 {
+    padding-left: 5px;
+    margin-right: 60px;
+    font-family: var(--fnt-fam-para);
+}
+
+.vlog-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* width: 100%; */
+    grid-row-gap: 30px;
+}
+
+.vlog-main div {
+    margin: 5px auto;
+    width: 310px;
+    height: 150px;
+    /* border: 1px solid blueviolet; */
+}
+
+.vlog-main div h4 {
+    text-align: center;
+    color: white;
+    font-family: var(--fnt-fam-para);
+    background-color: rgb(128, 9, 226);
+    margin-top: 50%;
+}
+
+.vlog-main #tvn-box {
+    background-image: url(/iamge/logo/tvn-logo.png);
+    background-position: center;
+    /* background-color: #ff9f43; */
+    background-size: cover;
+    border-radius: 50px;
+    border: 1px dashed red;
+}
+
+.vlog-main #psc-box {
+    background-image: url(/iamge/logo/psc-logo.png);
+    /* background-color: #c23616; */
+    background-position: center;
+    background-size: contain;
+    border-radius: 50px;
+    border: 1px dashed red;
+}
+
+.vlog-main #negu-box {
+    background-image: url(/iamge/logo/negu-logo.png);
+    background-position: 100%;
+    /* background-color: #c23616; */
+    background-size: cover;
+    border-radius: 50px;
+    border: 1px dashed red;
+}
+
+.vlog h1 {
+    font-family: var(--fnt-fam-heading);
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    padding-top: 0px 10px;
+    border-radius: 13px;
+    width: 700px;
+    margin: auto auto;
+    background-color: rgb(128, 9, 226);
+}
+
+.vlog-main a {
+    color: white;
+    padding: 0px 5px;
+    background-color: #eb4d4b;
+    text-decoration: none;
+    transition: all .5s;
+    font-family: var(--fnt-fam-para)
+}
+
+.vlog-main a:hover {
+    transition-timing-function: linear;
+    color: white;
+    padding: 5px 5px;
+    background-color: rgb(199, 199, 13);
+    font-family: var(--fnt-fam-heading);
+}
+
+#yt-psc-vdo1,
+#yt-psc-vdo2,
+#yt-tvn-vdo1,
+#yt-tvn-vdo2,
+#yt-negu-vdo1,
+#yt-negu-vdo2 {
+    width: 350px;
+    height: 177px;
+    border-radius: 13px;
+    border: 2px dotted #c23616;
+}
+
+
+/* .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* Body> Vlog  ENDS */
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+
+.icon-bar {
+    /* top: 50%; */
+    padding-top: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 20px;
+}
+
+
+/* Style the icon bar links */
+
+.icon-bar a {
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+
+/* youtubel links */
+
+.footer-youtubeLinks a:hover {
+    color: #e84118;
+}
+
+.footer-youtubeLinks li:hover {
+    font-family: var(--fnt-fam-para);
+    font-size: 18px;
+}
+
+
+/* social media links */
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.github {
+    background: #dd4b39;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+/* Body> Footer  ENDS */
+
+
+/* Footer bottom side  */
+
+.footer-footer {
+    height: 60px;
+    /* border: 1px solid red; */
+    background-color: #636e72;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-footer h5 {
+    color: rgb(206, 201, 201);
+    padding-top: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:550px) {
+    #header {
+        background-color: #b44410;
+    }
+}
